@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner ab = new Scanner(System.in);
         boolean guessed = false;
-        int count = 1;
+        int count = 0;
         int tb = (int) Math.round(Math.random() * 100 + 1);
         System.out.println(tb);
 
@@ -29,6 +29,7 @@ public class Main {
             if (tb == imp) {
                 guessed = true;
                 System.out.println("You guessed the right number! it was " + tb);
+                System.out.println("You guessed " + count+" times");
             }
 
 
